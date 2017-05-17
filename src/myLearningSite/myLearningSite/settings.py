@@ -99,6 +99,18 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+#To include the app in our project, we need to add a reference to its configuration class in the INSTALLED_APPS setting
+
+INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
+    'django.contrib.admin',
+    'django.contrib.auth',
+    'django.contrib.contenttypes',
+    'django.contrib.sessions',
+    'django.contrib.messages',
+    'django.contrib.staticfiles',
+]
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
